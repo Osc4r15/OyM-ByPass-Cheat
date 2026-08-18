@@ -43,7 +43,9 @@ Funciones(posible panel)
 2.	Controlar el tiempo restante del examen (pausarlo, cambiarlo).
  [nota; inseguro tal vez el reloj está en la base de datos])
 
-3.	Replicar el visibility api blocker asegurando que se bloquen todas las herramientas necesarias 
+3.	Replicar el visibility api blocker asegurando que se bloquen todas las herramientas necesarias
+
+4.	extra: evitar que se cierre la sesión por afk
 
 
 BASE PRINCIPAL PARA BYPASS
