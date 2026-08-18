@@ -3,16 +3,34 @@ Una trampita sana
 
 Bypass universidad exámenes 
  
-  
+  <img width="1920" height="971" alt="image" src="https://github.com/user-attachments/assets/361a7b48-fcba-476b-a6a3-019bde820ef3" />
+
+  <img width="902" height="429" alt="image" src="https://github.com/user-attachments/assets/b1514c0a-cb52-446a-bad8-55abe5d6e92d" />
+
+  <img width="956" height="412" alt="image" src="https://github.com/user-attachments/assets/f902f929-c2a0-47bb-a98b-fe591bbd6b85" />
+
+  <img width="834" height="125" alt="image" src="https://github.com/user-attachments/assets/6394eda0-c5e2-4d76-b1af-1cef423acc02" />
+
+
+
+
  
 document.hidden 
+
 document.visibilityState 
+
 visibilitychange 
+
 blur 
+
 focus 
+
 visibilitychange 
+
 webkitvisibilitychange 
+
 blur
+
 
 ~document.hidden ni document.visibilityState ni focus~ estas no las cubre 
 
