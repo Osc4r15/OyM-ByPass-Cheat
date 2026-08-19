@@ -71,4 +71,6 @@ Versiones:
 1. completa / normal
 2. limitada con activación remota del desarrollador
 
+//para hacer mas pruebas fuera del examen: luego de extraer los logs del examen intentar hacer o buscar una replica para hacer mas pruebas, que utilice las mismas herramientas y variantes
+
 Datos extraidos del examen: ...
