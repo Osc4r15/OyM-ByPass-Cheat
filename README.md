@@ -58,4 +58,12 @@ Con la extensión "DevRecorder" puedo obtener estos registros en tiempo real + g
 
 ![Uploading image.png…]()
 
+IDEAS:
+interfaz:
+Ya que puede ser complicado hacer la interfaz planeada sin experiencia, hacer que solo sea toda la imagen de fondo (con los colores, logos y textos osea  un solo jpg) y solo agregarle los botones por encima
+
+Versiones:
+1. completa / normal
+2. limitada con activación remota del desarrollador
+
 Datos extraidos del examen: ...
