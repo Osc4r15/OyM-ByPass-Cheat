@@ -47,12 +47,14 @@ Funciones(posible panel)
 
 4.	extra: evitar que se cierre la sesión por afk
 
+  // agregar advertencia de cuales de las funciones reinician o requieren iniciar la pagina
+
 
 BASE PRINCIPAL PARA BYPASS
 para sacar las herramientas y funciones necesarias para la extensión necesito saber como funciona en tiempo real el examen tanto su Log/Console/Source y todos los datos en tiempo real posible.
 [Hacerlo de forma manual con la inspección de pagina a medio examen puede ser medio tedioso buscar lo necesario]
 
-Con la extensión "DevRecorder" puedo obtener estos registros en tiempo real + grabación para sincronizar lo hecho en la interfaz con lo sucedido dentro de los datos de la pagina
+// Con la extensión "DevRecorder" puedo obtener estos registros en tiempo real + grabación para sincronizar lo hecho en la interfaz con lo sucedido dentro de los datos de la pagina
 
 <img width="640" height="242" alt="image" src="https://github.com/user-attachments/assets/2baeff77-4fc9-448f-8761-86d581b4a8a7" />
 
