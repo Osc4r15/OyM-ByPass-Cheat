@@ -56,11 +56,14 @@ Con la extensión "DevRecorder" puedo obtener estos registros en tiempo real + g
 
 <img width="640" height="242" alt="image" src="https://github.com/user-attachments/assets/2baeff77-4fc9-448f-8761-86d581b4a8a7" />
 
-![Uploading image.png…]()
+
 
 IDEAS:
 interfaz:
 Ya que puede ser complicado hacer la interfaz planeada sin experiencia, hacer que solo sea toda la imagen de fondo (con los colores, logos y textos osea  un solo jpg) y solo agregarle los botones por encima
+idea grafica
+<img width="831" height="667" alt="Screenshot 2026-08-18 193254" src="https://github.com/user-attachments/assets/5bcfcd06-93ee-46a1-bf0f-83d601ae7b72" />
+
 
 Versiones:
 1. completa / normal
