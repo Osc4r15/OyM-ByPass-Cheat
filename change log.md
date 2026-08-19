@@ -98,7 +98,3 @@ V 0.4
 - Interfaz con fondo, jerarquía visual, opacidad controlada.  
 - Switches estilizados (rojo apagado, verde encendido).  
 - Título personalizado con enlace a tu IG y degradado animado.  
-
----
-
-👉 Próximo paso natural: crear **placeholders en `respuestas.js`, `tiempo.js` y `antiafk.js`** para que ya estén listos y solo metas la lógica cuando toque. ¿Quieres que te arme esos tres archivos vacíos pero bien estructurados para completar el setup?
