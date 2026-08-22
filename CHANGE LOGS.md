@@ -125,7 +125,7 @@ V 0.4
 ---
 
  Estado actual
- Extensión modular con cuatro switches.  
+ -Extensión modular con cuatro switches.  
  Anti-trampa funcional, los demás listos para lógica futura.  
  Switches deshabilitados con tooltips explicativos.  
  Interfaz con fondo, jerarquía visual, opacidad controlada.  
