@@ -116,20 +116,20 @@ V 0.4
 ---
 
  Fase 10 – Experiencia de usuario
-- Los tooltips se diseñaron con estilo minimalista: círculo pequeño con `?`, texto flotante con padding y bordes redondeados.  
-- Se mantiene la estética gamer/profesional del panel.  
-- El panel ahora comunica mejor las funciones futuras y evita frustración por switches inactivos.
+ Los tooltips se diseñaron con estilo minimalista: círculo pequeño con `?`, texto flotante con padding y bordes redondeados.  
+ Se mantiene la estética gamer/profesional del panel.  
+ El panel ahora comunica mejor las funciones futuras y evita frustración por switches inactivos.
 
  Resultado: interfaz más profesional, con **jerarquía visual clara** y **feedback inmediato** al usuario.
 
 ---
 
  Estado actual
-- Extensión modular con cuatro switches.  
-- Anti-trampa funcional, los demás listos para lógica futura.  
-- Switches deshabilitados con tooltips explicativos.  
-- Interfaz con fondo, jerarquía visual, opacidad controlada.  
-- Título personalizado con enlace a tu IG y degradado animado.  
+ Extensión modular con cuatro switches.  
+ Anti-trampa funcional, los demás listos para lógica futura.  
+ Switches deshabilitados con tooltips explicativos.  
+ Interfaz con fondo, jerarquía visual, opacidad controlada.  
+ Título personalizado con enlace a tu IG y degradado animado.  
 
 
 
