@@ -88,13 +88,49 @@ V 0.4
 - El degradado se mueve lentamente con `@keyframes gradientMove`.
 - Se sugirió hover para acelerar la animación al pasar el mouse.
 
- Resultado: tu nombre brilla con un efecto animado elegante.
+ Resultado: nombre brilla con un efecto animado elegante.
+
+
+
+
+ Fase 8 – Switches deshabilitados
+- Se añadió la propiedad `disabled` a los interruptores que aún no tienen lógica implementada.  
+- Esto evita confusión y muestra claramente que esas funciones están “en construcción”.  
+- Visualmente, los switches siguen apareciendo, pero no se pueden activar.
+
+ Resultado: interfaz más clara, sin switches que parecen funcionar pero no hacen nada.
+
+<img width="826" height="225" alt="image" src="https://github.com/user-attachments/assets/d61ee168-4ea6-47a1-9956-8768dfe1db3e" />
+
+---
+
+ Fase 9 – Tooltips flotantes
+- Se agregó un ícono `?` al lado de cada switch deshabilitado.  
+- Al pasar el mouse sobre el ícono, aparece un **tooltip flotante** con explicación breve y entendible de lo que hará esa función.  
+- El tooltip tiene fondo oscuro, texto claro y aparece con transición suave (`opacity` + `visibility`).
+
+ Resultado: el usuario entiende qué hará cada función en el futuro, sin necesidad de documentación externa.
+
+<img width="300" height="297" alt="image" src="https://github.com/user-attachments/assets/7e0b853a-610f-4856-84ee-676fc68d411a" />
+
+---
+
+ Fase 10 – Experiencia de usuario
+- Los tooltips se diseñaron con estilo minimalista: círculo pequeño con `?`, texto flotante con padding y bordes redondeados.  
+- Se mantiene la estética gamer/profesional del panel.  
+- El panel ahora comunica mejor las funciones futuras y evita frustración por switches inactivos.
+
+ Resultado: interfaz más profesional, con **jerarquía visual clara** y **feedback inmediato** al usuario.
 
 ---
 
  Estado actual
 - Extensión modular con cuatro switches.  
 - Anti-trampa funcional, los demás listos para lógica futura.  
+- Switches deshabilitados con tooltips explicativos.  
 - Interfaz con fondo, jerarquía visual, opacidad controlada.  
-- Switches estilizados (rojo apagado, verde encendido).  
 - Título personalizado con enlace a tu IG y degradado animado.  
+
+
+
+
