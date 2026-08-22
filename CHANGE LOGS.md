@@ -5,6 +5,7 @@ V 0
 
 
  Fase 1 – Base inicial
+ 
  Se creó la estructura mínima de la extensión con:
    
    `manifest.json` → configuración básica.
@@ -32,7 +33,11 @@ V 0.2
 
 <img width="307" height="283" alt="image" src="https://github.com/user-attachments/assets/55dbd7aa-cf88-4784-b579-ce23a4de65ad" />
 
+
+ 
+ 
  Fase 2 – Interfaz con más interruptores
+ 
  
  Se añadieron los demás switches en el `popup.html`:
    
@@ -49,7 +54,11 @@ V 0.2
 
 ---
 
+
+ 
+ 
  Fase 3 – Modularidad
+ 
 
  Se planteó separar cada función en su propio archivo:
    
@@ -69,7 +78,11 @@ V 0.2
 
 ---
 
+
+ 
+ 
  Fase 4 – Estilo visual
+ 
  
  Se cambió el diseño de los interruptores a **switches ovalados** con círculo rojo apagado y verde encendido.
  
@@ -84,7 +97,11 @@ V 0.2
 V 0.3
 <img width="295" height="282" alt="image" src="https://github.com/user-attachments/assets/a584640d-5361-43cd-b2c8-1567df227fd9" />
 
+
+ 
+ 
  Fase 5 – Fondo y jerarquía visual
+ 
  
  Se añadió un **fondo con imagen** (`background-image`).
  
@@ -98,7 +115,11 @@ V 0.3
 
 ---
 
+
+ 
+ 
  Fase 6 – Personalización
+ 
  
  Se añadió un enlace en el título a tu **Instagram** (`<h2>OyM ch34t by <a>Osc4r</a></h2>`).
  
@@ -115,7 +136,11 @@ V 0.4
 <img width="358" height="359" alt="image" src="https://github.com/user-attachments/assets/99a13152-9354-40d0-97a0-96845df34b78" />
 
 
+
+ 
+ 
  Fase 7 – Animación
+ 
  
  Se aplicó un **degradado animado** al texto del enlace “Osc4r”.
  
@@ -128,7 +153,11 @@ V 0.4
 
 
 
+
+ 
+ 
  Fase 8 – Switches deshabilitados
+ 
  
  Se añadió la propiedad `disabled` a los interruptores que aún no tienen lógica implementada.  
  
@@ -142,7 +171,11 @@ V 0.4
 
 ---
 
+
+ 
+ 
  Fase 9 – Tooltips flotantes
+ 
 
 Se agregó un ícono `?` al lado de cada switch deshabilitado.  
  
@@ -156,7 +189,11 @@ Se agregó un ícono `?` al lado de cada switch deshabilitado.
 
 ---
 
+
+ 
+ 
  Fase 10 – Experiencia de usuario
+ 
  
  Los tooltips se diseñaron con estilo minimalista: círculo pequeño con `?`, texto flotante con padding y bordes redondeados.  
  
@@ -168,7 +205,10 @@ Se agregó un ícono `?` al lado de cada switch deshabilitado.
 
 ---
 
+
  Estado actual
+
+ 
  
  Extensión modular con cuatro switches.  
  
