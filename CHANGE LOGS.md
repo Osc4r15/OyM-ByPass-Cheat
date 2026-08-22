@@ -6,10 +6,15 @@ V 0
 
  Fase 1 – Base inicial
  Se creó la estructura mínima de la extensión con:
+   
    `manifest.json` → configuración básica.
+   
    `popup.html` → panel con un interruptor para **Bypass anti-trampa**.
+   
    `popup.js` → escuchaba el cambio del switch y mandaba mensaje.
+   
    `background.js` → inyectaba `blocker.js` si estaba activado.
+  
    `blocker.js` → bloqueaba eventos de visibilidad y blur/focus.
  Implementación de imagen de fondo
  Resultado: un solo switch funcional, pero recargaba la página al desactivarlo.
