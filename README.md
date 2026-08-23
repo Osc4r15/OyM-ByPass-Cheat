@@ -4,7 +4,7 @@ Una extensión bacana pa curarse con la uni
 
 <img width="296" height="299" alt="image" src="https://github.com/user-attachments/assets/ed6f2fee-3676-476a-91d4-0ab05a9a1c2a" />
 
-
+Revisando los sources y elements de la plataforma y una búsqueda de un buen rato, logré encontrar las herramientas de seguridad básicas que utiliza, bloqueándolas logrando engañarla dentro de los exámenes dándole base a esto.
 ---
 
 ##  Change Log
@@ -148,3 +148,4 @@ Una extensión bacana pa curarse con la uni
 - Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez).
 
 ---
+https://github.com/Osc4r15/OyM-ByPass-Cheat-files
