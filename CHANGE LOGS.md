@@ -231,5 +231,9 @@ fue complicado mantener el script activo o que al menos se active pero con ayuda
  Anti Afk working
 
 
+ IDEAS:
+ Hacer que las preguntas correctas funcionen como el afk, que se recarguen cada cierto tiempo en tiempo real para no tener que activar y desactivar la opción, un marco verde rodeando la respuesta correcta y que cada cantidad de segundos aparezca un mensaje que diga (la respuesta correcta es (la numero ... o que directamente ponga todo el texto de la respuesta aunque no creo por si puede ser muy largo), o que en en vez que se injecte cada cierto tiempo para comprobar, que re injecte cada que la pagina se "actualiza" cuando pasa de una pregunta a otra
+
+
 
 
