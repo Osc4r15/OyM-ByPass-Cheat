@@ -1,76 +1,147 @@
-# OyM-ByPass-Cheat
-Una trampita sana
+# OyM ch34t by Osc4r 🕷
 
-Bypass universidad exámenes 
- 
-  <img width="1920" height="971" alt="image" src="https://github.com/user-attachments/assets/361a7b48-fcba-476b-a6a3-019bde820ef3" />
+Extensión modular para Chrome con enfoque en **anti-trampa**, **anti-AFK** y funciones experimentales de apoyo en exámenes.  
+Diseñada con estilo gamer/profesional, interfaz personalizada y arquitectura lista para crecer.
 
-  <img width="902" height="429" alt="image" src="https://github.com/user-attachments/assets/b1514c0a-cb52-446a-bad8-55abe5d6e92d" />
+---
 
-  <img width="956" height="412" alt="image" src="https://github.com/user-attachments/assets/f902f929-c2a0-47bb-a98b-fe591bbd6b85" />
+##  Change Log
 
-  <img width="834" height="125" alt="image" src="https://github.com/user-attachments/assets/6394eda0-c5e2-4d76-b1af-1cef423acc02" />
+### V 0 – Base inicial
+<img width="291" height="241" alt="image" src="https://github.com/user-attachments/assets/33b6743b-2458-4ffc-8944-384e1630e35c" />
 
+- `manifest.json` → configuración básica  
+- `popup.html` → panel con interruptor para **Bypass anti-trampa**  
+- `popup.js` → escuchaba cambios y mandaba mensajes  
+- `background.js` → inyectaba `blocker.js` si estaba activado  
+- `blocker.js` → bloqueaba eventos de visibilidad y blur/focus  
+- Implementación de imagen de fondo  
 
+**Resultado:** un solo switch funcional, pero recargaba la página al desactivarlo.
 
+---
 
- 
-document.hidden 
+### V 0.1
+<img width="297" height="246" alt="image" src="https://github.com/user-attachments/assets/57965340-bd31-4557-8a93-86be8208837e" />
 
-document.visibilityState 
+---
 
-visibilitychange 
+### V 0.2
+<img width="307" height="283" alt="image" src="https://github.com/user-attachments/assets/55dbd7aa-cf88-4784-b579-ce23a4de65ad" />
 
-blur 
+**Fase 2 – Interfaz con más interruptores**
+- Se añadieron switches para:
+  - Ver respuestas correctas  
+  - Pausar/modificar tiempo  
+  - Anti-AFK  
+- Por ahora solo imprimían en consola (`console.log`).
 
-focus 
+**Resultado:** interfaz con cuatro interruptores, pero solo el de Anti-trampa tenía lógica real.
 
-visibilitychange 
+---
 
-webkitvisibilitychange 
+### Fase 3 – Modularidad
+- Separación de funciones en archivos:
+  - `respuestas.js`  
+  - `tiempo.js`  
+  - `antiafk.js`  
+  - `blocker.js`  
+- `popup.js` solo manda mensajes, `background.js` decide qué inyectar.  
 
-blur
+**Resultado:** arquitectura modular lista para crecer.
 
+---
 
-~document.hidden ni document.visibilityState ni focus~ estas no las cubre 
+### Fase 4 – Estilo visual
+- Interruptores ovalados con círculo rojo apagado y verde encendido.  
+- CSS personalizado (`popup.css`) para look moderno.  
 
+**Resultado:** switches con estilo gamer/profesional.
 
-Hacer nueva extensión: 
-Funciones(posible panel) 
-1.	Detectar la respuesta correcta desde los datos de la página (que ilumine la opción correcta o correctas con algún color, o en una pestaña de la extensión salga escrita la respuesta correcta  
-[no es ia es extracción de datos])
+---
 
-2.	Controlar el tiempo restante del examen (pausarlo, cambiarlo).
- [nota; inseguro tal vez el reloj está en la base de datos])
+### V 0.3
+<img width="295" height="282" alt="image" src="https://github.com/user-attachments/assets/a584640d-5361-43cd-b2c8-1567df227fd9" />
 
-3.	Replicar el visibility api blocker asegurando que se bloquen todas las herramientas necesarias
+**Fase 5 – Fondo y jerarquía visual**
+- Fondo con imagen (`background-image`).  
+- Opacidad ajustada en aviso y estado.  
+- Aviso cambiado a `<h3>` para estilizar aparte.  
+- Título alineado a la izquierda.  
 
-4.	extra: evitar que se cierre la sesión por afk
+**Resultado:** interfaz más ordenada y clara.
 
-  // agregar advertencia de cuales de las funciones reinician o requieren iniciar la pagina
+---
 
+### Fase 6 – Personalización
+- Enlace en el título a Instagram.  
+- Estilo con color y grosor distinto.  
 
-BASE PRINCIPAL PARA BYPASS
-para sacar las herramientas y funciones necesarias para la extensión necesito saber como funciona en tiempo real el examen tanto su Log/Console/Source y todos los datos en tiempo real posible.
-[Hacerlo de forma manual con la inspección de pagina a medio examen puede ser medio tedioso buscar lo necesario]
+**Resultado:** panel con identidad personal.
 
-// Con la extensión "DevRecorder" puedo obtener estos registros en tiempo real + grabación para sincronizar lo hecho en la interfaz con lo sucedido dentro de los datos de la pagina
+---
 
-<img width="640" height="242" alt="image" src="https://github.com/user-attachments/assets/2baeff77-4fc9-448f-8761-86d581b4a8a7" />
+### V 0.4
+<img width="358" height="359" alt="image" src="https://github.com/user-attachments/assets/99a13152-9354-40d0-97a0-96845df34b78" />
 
+**Fase 7 – Animación**
+- Degradado animado en el texto “Osc4r”.  
+- Movimiento con `@keyframes gradientMove`.  
 
+**Resultado:** nombre con efecto animado elegante.
 
-IDEAS:
-interfaz:
-Ya que puede ser complicado hacer la interfaz planeada sin experiencia, hacer que solo sea toda la imagen de fondo (con los colores, logos y textos osea  un solo jpg) y solo agregarle los botones por encima
-idea grafica
-<img width="831" height="667" alt="Screenshot 2026-08-18 193254" src="https://github.com/user-attachments/assets/5bcfcd06-93ee-46a1-bf0f-83d601ae7b72" />
+---
 
+### Fase 8 – Switches deshabilitados
+<img width="826" height="225" alt="image" src="https://github.com/user-attachments/assets/d61ee168-4ea6-47a1-9956-8768dfe1db3e" />
 
-Versiones:
-1. completa / normal
-2. limitada con activación remota del desarrollador
+- Switches sin lógica → `disabled`.  
+- Evita confusión, muestra que están “en construcción”.
 
-//para hacer mas pruebas fuera del examen: luego de extraer los logs del examen intentar hacer o buscar una replica para hacer mas pruebas, que utilice las mismas herramientas y variantes
+---
 
-Datos extraidos del examen: ...
+### Fase 9 – Tooltips flotantes
+<img width="300" height="297" alt="image" src="https://github.com/user-attachments/assets/7e0b853a-610f-4856-84ee-676fc68d411a" />
+
+- Ícono `?` junto a cada switch deshabilitado.  
+- Tooltip flotante con explicación breve.  
+- Fondo oscuro, texto claro, transición suave.  
+
+---
+
+### Fase 10 – Experiencia de usuario
+- Tooltips minimalistas con círculo `?`.  
+- Texto flotante con padding y bordes redondeados.  
+- Estética gamer/profesional mantenida.  
+
+**Resultado:** interfaz más profesional y con feedback inmediato.
+
+---
+
+### Fase 11 – Anti-AFK funcionando
+<img width="306" height="295" alt="image" src="https://github.com/user-attachments/assets/aea45e63-054e-4461-bf16-1af29e00e53d" />
+<img width="225" height="56" alt="image" src="https://github.com/user-attachments/assets/fef06c2e-645e-43f4-b56f-9de768872f3a" />
+
+- Implementación del script Anti-AFK con reloj activo.  
+- Inspirado en extensión simple de “keep-alive”.  
+
+---
+
+##  Estado actual
+- Extensión modular con cuatro switches.  
+- Anti-trampa funcional.  
+- Anti-AFK funcionando.  
+- Switches deshabilitados con tooltips explicativos.  
+- Interfaz con fondo, jerarquía visual y opacidad controlada.  
+- Título personalizado con enlace a IG y degradado animado.  
+
+---
+
+##  Ideas futuras
+- Que las **respuestas correctas** funcionen como el Anti-AFK:  
+  - Recargarse en tiempo real.  
+  - Marco verde rodeando la respuesta correcta.  
+  - Mensaje flotante indicando cuál es la correcta.  
+- Re-inyección automática al cambiar de pregunta/página.  
+
+---
