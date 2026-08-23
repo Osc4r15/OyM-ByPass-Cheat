@@ -1,7 +1,7 @@
 # OyM ch34t by Osc4r 🕷
+Una extensión bacana pa curarse con la uni
+<img width="296" height="299" alt="image" src="https://github.com/user-attachments/assets/ed6f2fee-3676-476a-91d4-0ab05a9a1c2a" />
 
-Extensión modular para Chrome con enfoque en **anti-trampa**, **anti-AFK** y funciones experimentales de apoyo en exámenes.  
-Diseñada con estilo gamer/profesional, interfaz personalizada y arquitectura lista para crecer.
 
 ---
 
