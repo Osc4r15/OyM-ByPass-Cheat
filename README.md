@@ -1,5 +1,7 @@
 # OyM ch34t by Osc4r 🕷
 Una extensión bacana pa curarse con la uni
+// estado de la extensión según funciones: 50% //
+
 <img width="296" height="299" alt="image" src="https://github.com/user-attachments/assets/ed6f2fee-3676-476a-91d4-0ab05a9a1c2a" />
 
 
@@ -142,6 +144,7 @@ Una extensión bacana pa curarse con la uni
   - Recargarse en tiempo real.  
   - Marco verde rodeando la respuesta correcta.  
   - Mensaje flotante indicando cuál es la correcta.  
-- Re-inyección automática al cambiar de pregunta/página.  
+- Re-inyección automática al cambiar de pregunta/página.
+- Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez).
 
 ---
