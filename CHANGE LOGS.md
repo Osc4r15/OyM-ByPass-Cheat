@@ -205,7 +205,15 @@ Se agregó un ícono `?` al lado de cada switch deshabilitado.
 
 ---
 
+Fase 11 - Anti afk funcionando
 
+fue complicado mantener el script activo o que al menos se active pero con ayuda del codigo fuente de una extensión simple de reloj activo y muchas horas lo pude implementar
+
+<img width="306" height="295" alt="image" src="https://github.com/user-attachments/assets/aea45e63-054e-4461-bf16-1af29e00e53d" />
+<img width="225" height="56" alt="image" src="https://github.com/user-attachments/assets/fef06c2e-645e-43f4-b56f-9de768872f3a" />
+
+
+ 
  Estado actual
 
  
@@ -219,6 +227,8 @@ Se agregó un ícono `?` al lado de cada switch deshabilitado.
  Interfaz con fondo, jerarquía visual, opacidad controlada.  
 
  Título personalizado con enlace a tu IG y degradado animado.  
+
+ Anti Afk working
 
 
 
