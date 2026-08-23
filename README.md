@@ -120,6 +120,8 @@ Revisando los sources y elements de la plataforma y una búsqueda de un buen rat
 
 ---
 
+V0.7
+
 ### Fase 11 – Anti-AFK funcionando
 <img width="306" height="295" alt="image" src="https://github.com/user-attachments/assets/aea45e63-054e-4461-bf16-1af29e00e53d" />
 <img width="225" height="56" alt="image" src="https://github.com/user-attachments/assets/fef06c2e-645e-43f4-b56f-9de768872f3a" />
@@ -129,13 +131,55 @@ Revisando los sources y elements de la plataforma y una búsqueda de un buen rat
 
 ---
 
+### Fase 12 - anti trampa api blocker mejorado
+Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pagina que se había registrado que lo tenía activado, el panel mostraba que si pero el script no estaba, ahora también se puede reiniciar la pagina sin problema que se desinjecte.
+
+
+## v0.7 Registro persistente
+- Se reemplazó la inyección puntual con `chrome.scripting.executeScript` por **registro persistente** usando `chrome.scripting.registerContentScripts`.
+- Ahora `blocker.js` queda registrado en el mundo MAIN y se ejecuta automáticamente en cada carga de página.
+- **Resultado:** el Anti‑Trampa ya no se pierde al refrescar la página.
+
+---
+
+## v0.7.1 – Activación inmediata
+- Al activar el switch, además de registrar el script, se **inyecta inmediatamente** en la pestaña actual con `executeScript`.
+- Esto asegura que el Anti‑Trampa empiece a funcionar **sin necesidad de refrescar manualmente**.
+- **Resultado:** activación instantánea + persistencia en reloads.
+
+---
+
+## v0.7.2 – Desactivación con recarga
+- Al desactivar el switch, se llama a `unregisterContentScripts` para quitar el registro persistente.
+- Se fuerza un `chrome.tabs.reload(tabId)` para limpiar los overrides en la pestaña actual.
+- **Resultado:** el Anti‑Trampa se desactiva correctamente y la página vuelve a su estado normal.
+
+
+- **Antes:** solo funcionaba al activarlo, pero se perdía al refrescar.
+- **Después:** funciona al instante, se mantiene en reloads, y se limpia al desactivar con recarga.
+
+
+---
+
+
 ##  Estado actual
-- Extensión modular con cuatro switches.  
-- Anti-trampa funcional.  
-- Anti-AFK funcionando.  
-- Switches deshabilitados con tooltips explicativos.  
-- Interfaz con fondo, jerarquía visual y opacidad controlada.  
-- Título personalizado con enlace a IG y degradado animado.  
+
+- Extensión modular con cuatro switches:
+  - **Anti‑trampa** funcional con registro persistente (`registerContentScripts`), inyección inmediata al activarlo y recarga automática al desactivarlo para limpiar la página.
+  - **Anti‑AFK** funcionando con reloj activo y simulación de actividad periódica.
+  - Switches deshabilitados con tooltips explicativos para las funciones en construcción.
+- Interfaz con fondo personalizado, jerarquía visual clara y opacidad controlada.
+- Interruptores estilizados (rojo apagado, verde encendido) con estética gamer/profesional.
+- Título personalizado con enlace a Instagram y degradado animado en el texto “Osc4r”.
+- Tooltips flotantes minimalistas con ícono `?` para feedback inmediato.
+- Arquitectura modular lista para crecer (`respuestas.js`, `tiempo.js`, `antiafk.js`, `blocker.js`).
+- ojo el anti afk no está funcionando como se aparenta
+
+
+---
+
+## Cosas por arreglar
+Anti AFK; se muestra correctamente el reloj y persiste la injección al cambiar de interfaz o actualizar la pagina, pero no cumple con los requisitos de la plataforma
 
 ---
 
@@ -147,5 +191,4 @@ Revisando los sources y elements de la plataforma y una búsqueda de un buen rat
 - Re-inyección automática al cambiar de pregunta/página.
 - Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez).
 
----
 https://github.com/Osc4r15/OyM-ByPass-Cheat-files
