@@ -187,7 +187,8 @@ Anti AFK; se muestra correctamente el reloj y persiste la injección al cambiar 
 - Que las **respuestas correctas** funcionen como el Anti-AFK:  
   - Recargarse en tiempo real.  
   - Marco verde rodeando la respuesta correcta.  
-  - Mensaje flotante indicando cuál es la correcta.  
+  - Mensaje flotante indicando cuál es la correcta.
+  - Al iguar que el reloj afk poner una burbuja flotante abajo que diga cual es la respuesta correcta, ya sea el numero de esta (1-4) o el texto de la respuesta completa, O AMBAS. en caso que se complique el cuadro verde
 - Re-inyección automática al cambiar de pregunta/página.
 - Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez).
 
