@@ -191,5 +191,17 @@ Anti AFK; se muestra correctamente el reloj y persiste la injección al cambiar 
   - Al iguar que el reloj afk poner una burbuja flotante abajo que diga cual es la respuesta correcta, ya sea el numero de esta (1-4) o el texto de la respuesta completa, O AMBAS. en caso que se complique el cuadro verde
 - Re-inyección automática al cambiar de pregunta/página.
 - Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez).
+- POSIBLE FUNCIÓN DE REMPLAZO O AGREGADO; habilitar el envío de tareas aunque ya esté vencida
+
+## Tener en cuenta para la extracción de datos de respuestas correctas:
+  - Dev recorder
+  - DOM screenchot
+  - Guardar html de cada pregunta (poco probable que sirva
+    
+  - burp suite:
+  - Ver http history en cada respuesta
+  - interceptar cada respuesta (con buscar con correct/incorrect false/true)
+  - interceptar el envío final del examen (en busqueda de: catidad de correctas/incorrectas, porcentaje de examen final)
+      
 
 https://github.com/Osc4r15/OyM-ByPass-Cheat-files
