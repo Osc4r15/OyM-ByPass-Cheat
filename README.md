@@ -162,24 +162,41 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 ---
 
 
+## v0.9 - AFK Actualizado 100%
+
+<img width="168" height="48" alt="image" src="https://github.com/user-attachments/assets/aa1baa3a-728e-4766-b154-8c5725b5067a" />
+<img width="168" height="44" alt="image" src="https://github.com/user-attachments/assets/e2daeba3-32d1-4a9a-b081-59a6b76ff548" />
+
+
+
+- Sacando datos de acciones con el burp repliqué el rquest que se envía al pulsar los botones pero sin acción alguna manteniendo al servidor activo
+- Remplacé el reloj de hora actual por un contador ascendente en formato hh:mm:ss.
+- El contador inicia en 00:00:00 al activar el Anti‑AFK y se reinicia al apagar el interruptor.
+- Estilo visual mejorado:
+  - fondo mejor para dark y normal mode
+  - ahora es rojo en vez de verde
+- **Resultado:** Ahora ya no es un "Funciona a veces" la regla funciona correctamente y es lo que necesita la pagina para mantener la sesión
+
+
 ##  Estado actual
 
 - Extensión modular con cuatro switches:
   - **Anti‑trampa** funcional con registro persistente (`registerContentScripts`), inyección inmediata al activarlo y recarga automática al desactivarlo para limpiar la página.
-  - **Anti‑AFK** funcionando con reloj activo y simulación de actividad periódica.
+  - **Anti‑AFK** funcionando con contador ascendente y simulación de actividad periódica.
   - Switches deshabilitados con tooltips explicativos para las funciones en construcción.
 - Interfaz con fondo personalizado, jerarquía visual clara y opacidad controlada.
 - Interruptores estilizados (rojo apagado, verde encendido) con estética gamer/profesional.
 - Título personalizado con enlace a Instagram y degradado animado en el texto “Osc4r”.
 - Tooltips flotantes minimalistas con ícono `?` para feedback inmediato.
 - Arquitectura modular lista para crecer (`respuestas.js`, `tiempo.js`, `antiafk.js`, `blocker.js`).
-- ojo el anti afk no está funcionando como se aparenta
+- ojo el anti afk no está funcionando como se aparenta | SOLUCIONADO
 
 
 ---
 
 ## Cosas por arreglar
 Anti AFK; se muestra correctamente el reloj y persiste la injección al cambiar de interfaz o actualizar la pagina, pero no cumple con los requisitos de la plataforma
+SOLUCIONADO
 
 ---
 
