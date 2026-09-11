@@ -2,7 +2,8 @@
 Una extensión bacana pa curarse con la uni
 // estado de la extensión según funciones: 50% //
 
-<img width="296" height="299" alt="image" src="https://github.com/user-attachments/assets/ed6f2fee-3676-476a-91d4-0ab05a9a1c2a" />
+<img width="297" height="298" alt="image" src="https://github.com/user-attachments/assets/d540a00c-3e4b-404e-9c4c-00f494f49131" />
+
 
 Revisando los sources y elements de la plataforma y una búsqueda de un buen rato, logré encontrar las herramientas de seguridad básicas que utiliza, bloqueándolas logrando engañarla dentro de los exámenes dándole base a esto.
 ---
@@ -178,6 +179,36 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 - **Resultado:** Ahora ya no es un "Funciona a veces" la regla funciona correctamente y es lo que necesita la pagina para mantener la sesión
 
 
+---
+
+
+## V 0.9.3 – Modo Oscuro Independiente y Optimizado
+
+
+<img width="296" height="296" alt="image" src="https://github.com/user-attachments/assets/924920ca-9965-4a96-8fb1-3022d4ea9bd4" />
+
+
+### Fase 13 – Módulo de Modo Oscuro (`dark.js`)
+
+- Separación de la lógica del modo oscuro en una carpeta dedicada (`darkmode/`) y un script independiente (`dark.js`), dejando libre el `content.js` para otras tareas de la plataforma.
+- Implementación de **ejecución ultra-temprana** (`run_at: "document_start"`) para interceptar la página desde el milisegundo cero y evitar parpadeos blancos al recargar.
+- Soporte para **persistencia por dominio**: guarda automáticamente el estado usando `chrome.storage.local` tomando como clave el hostname actual de la pestaña.
+
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b59f5d51-8dfb-4f3e-9cc1-f3703fde3612" />
+
+
+### Fase 14 – Afinación de Filtros y Contraste
+
+- Ajuste fino de la inversión de colores aplicando un filtro compuesto: `filter: invert(100%) hue-rotate(180deg) contrast(120%)` para darle mayor definición a los textos y negros más profundos.
+- Corrección específica en selectores complejos de la interfaz (como la barra lateral izquierda `div.sidebar-left.open.rtl-ps-none.ps`, botones principales y elementos `.nav-pills`) aplicando una inversión de `111%` para mantener la armonía visual sin destellos molestos.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5105a73c-4d49-442f-8262-38695d9ac2d6" />
+
+
+---
+
+
+
 ##  Estado actual
 
 - Extensión modular con cuatro switches:
@@ -190,13 +221,16 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 - Tooltips flotantes minimalistas con ícono `?` para feedback inmediato.
 - Arquitectura modular lista para crecer (`respuestas.js`, `tiempo.js`, `antiafk.js`, `blocker.js`).
 - ojo el anti afk no está funcionando como se aparenta | SOLUCIONADO
+- **Anti‑AFK** operando al 100% con simulación de peticiones reales, contador ascendente y diseño adaptado.
+- Se remplazó la idea de "Pausar tiempo" por modo oscuro para la plataforma
+- **Modo Oscuro** totalmente funcional, independiente, con persistencia por dominio, inyección ultra-temprana sin parpadeos y contraste mejorado (`120%`).
 
 
 ---
 
 ## Cosas por arreglar
 Anti AFK; se muestra correctamente el reloj y persiste la injección al cambiar de interfaz o actualizar la pagina, pero no cumple con los requisitos de la plataforma
-SOLUCIONADO
+SOLUCIONADO!!!!!!!!!!!!!!
 
 ---
 
@@ -208,7 +242,7 @@ SOLUCIONADO
   - Al iguar que el reloj afk poner una burbuja flotante abajo que diga cual es la respuesta correcta, ya sea el numero de esta (1-4) o el texto de la respuesta completa, O AMBAS. en caso que se complique el cuadro verde
 - Re-inyección automática al cambiar de pregunta/página.
 - Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez).
-- POSIBLE FUNCIÓN DE REMPLAZO O AGREGADO; habilitar el envío de tareas aunque ya esté vencida
+- POSIBLE FUNCIÓN DE REMPLAZO O AGREGADO; habilitar el envío de tareas aunque ya esté vencida (COMPLICADO, SE HIZO CON DARKMODE MIENTRAS TANTO)
 
 ## Tener en cuenta para la extracción de datos de respuestas correctas:
   - Dev recorder
