@@ -1,8 +1,11 @@
 # OyM ch34t by Osc4r 🕷
 Una extensión bacana pa curarse con la uni
-// estado de la extensión según funciones: 50% //
+// estado de la extensión según funciones: 75% //
 
-<img width="297" height="298" alt="image" src="https://github.com/user-attachments/assets/d540a00c-3e4b-404e-9c4c-00f494f49131" />
+https://chromewebstore.google.com/detail/oym-ch34t-by-osc4r/afahmbfpmgojkabkgpdglalckfeldfmo
+
+<img width="296" height="300" alt="image" src="https://github.com/user-attachments/assets/f694c144-7604-4988-b22c-098193cb4a91" />
+
 
 
 Revisando los sources y elements de la plataforma y una búsqueda de un buen rato, logré encontrar las herramientas de seguridad básicas que utiliza, bloqueándolas logrando engañarla dentro de los exámenes dándole base a esto.
@@ -207,12 +210,23 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 
 ---
 
+### Fase 15 - Legalización en la chrome store - optimización y mejora del blocker
+
+- La versión se simplificó a lite quitando los permisos '<all_urls>' y solo dejando los dominios de la plataforma (para evitar semanas de revisión)
+- Se pagó la cuota de desarrollador y se publicó correctamente en la plataforma de manera oculta temporalmente en lo que se termina la ultima función
+- se mejoró mucho mas el Anti-Trampa y se evitó errores en capa 8
+- se cambió la parte inferior por un log interactivo
+
+  <img width="1094" height="740" alt="image" src="https://github.com/user-attachments/assets/b31bc877-161b-4711-8e30-d3f85c11a6c9" />
+
+  <img width="163" height="60" alt="image" src="https://github.com/user-attachments/assets/95ffb42e-fbf3-4f9a-bbdf-28c2273da192" />
+
 
 
 ##  Estado actual
 
 - Extensión modular con cuatro switches:
-  - **Anti‑trampa** funcional con registro persistente (`registerContentScripts`), inyección inmediata al activarlo y recarga automática al desactivarlo para limpiar la página.
+  - **Anti‑trampa** funcional con registro persistente (`registerContentScripts`), inyección inmediata al activarlo y recarga automática al desactivarlo para limpiar la página. (reforzado)
   - **Anti‑AFK** funcionando con contador ascendente y simulación de actividad periódica.
   - Switches deshabilitados con tooltips explicativos para las funciones en construcción.
 - Interfaz con fondo personalizado, jerarquía visual clara y opacidad controlada.
@@ -224,6 +238,8 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 - **Anti‑AFK** operando al 100% con simulación de peticiones reales, contador ascendente y diseño adaptado.
 - Se remplazó la idea de "Pausar tiempo" por modo oscuro para la plataforma
 - **Modo Oscuro** totalmente funcional, independiente, con persistencia por dominio, inyección ultra-temprana sin parpadeos y contraste mejorado (`120%`).
+- El error de parpadeo no es fallo de la extensión es demora por el consumo de cpu
+- Publicada en chrome store
 
 
 ---
@@ -241,7 +257,7 @@ SOLUCIONADO!!!!!!!!!!!!!!
   - Mensaje flotante indicando cuál es la correcta.
   - Al iguar que el reloj afk poner una burbuja flotante abajo que diga cual es la respuesta correcta, ya sea el numero de esta (1-4) o el texto de la respuesta completa, O AMBAS. en caso que se complique el cuadro verde
 - Re-inyección automática al cambiar de pregunta/página.
-- Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez).
+- Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez). HECHO
 - POSIBLE FUNCIÓN DE REMPLAZO O AGREGADO; habilitar el envío de tareas aunque ya esté vencida (COMPLICADO, SE HIZO CON DARKMODE MIENTRAS TANTO)
 
 ## Tener en cuenta para la extracción de datos de respuestas correctas:
