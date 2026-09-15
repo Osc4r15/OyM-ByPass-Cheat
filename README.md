@@ -209,8 +209,8 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 
 
 ---
-
-### Fase 15 - Legalización en la chrome store - optimización y mejora del blocker
+### V 0.9.5
+### Fase 15 - Legalización en la chrome store - optimización y mejora del blocker + darkmode
 
 - La versión se simplificó a lite quitando los permisos '<all_urls>' y solo dejando los dominios de la plataforma (para evitar semanas de revisión)
 - Se pagó la cuota de desarrollador y se publicó correctamente en la plataforma de manera oculta temporalmente en lo que se termina la ultima función
@@ -221,6 +221,13 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 
   <img width="163" height="60" alt="image" src="https://github.com/user-attachments/assets/95ffb42e-fbf3-4f9a-bbdf-28c2273da192" />
 
+
+---
+
+### V 0.9.7
+- Se pulieron algunas cosas del darkmode para que algunos objetos no se inviertan
+- se eliminó que lo pdf de la plataforma sean afectados por el darkmode
+- se juntó la función del login y la pagina principal de la plataforma para que estén sincronizados con el darkmode sin aplicarlo a todas las paginas con la idea de usar el <all_url> en un futuro y no sea afectado
 
 
 ##  Estado actual
@@ -255,7 +262,7 @@ SOLUCIONADO!!!!!!!!!!!!!!
   - Recargarse en tiempo real.  
   - Marco verde rodeando la respuesta correcta.  
   - Mensaje flotante indicando cuál es la correcta.
-  - Al iguar que el reloj afk poner una burbuja flotante abajo que diga cual es la respuesta correcta, ya sea el numero de esta (1-4) o el texto de la respuesta completa, O AMBAS. en caso que se complique el cuadro verde
+  - Al iguar que el reloj afk poner una burbuja flotante abajo que diga cual es la respuesta correcta, ya sea el numero de esta (1-4) o el texto de la respuesta completa, O AMBAS. en caso que se complique el cuadro Rojo
 - Re-inyección automática al cambiar de pregunta/página.
 - Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez). HECHO
 - POSIBLE FUNCIÓN DE REMPLAZO O AGREGADO; habilitar el envío de tareas aunque ya esté vencida (COMPLICADO, SE HIZO CON DARKMODE MIENTRAS TANTO)
