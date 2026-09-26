@@ -230,12 +230,23 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 - se juntó la función del login y la pagina principal de la plataforma para que estén sincronizados con el darkmode sin aplicarlo a todas las paginas con la idea de usar el <all_url> en un futuro y no sea afectado
 
 
+---
+
+<img width="647" height="139" alt="image" src="https://github.com/user-attachments/assets/f14c4816-286d-4a77-9020-f529d3b873b9" />
+<img width="436" height="79" alt="image" src="https://github.com/user-attachments/assets/9bf25eb0-d3b8-412b-a000-8c1e1e0077d9" />
+
+### V 0.9.7 
+- Se agregó un botón para pausar el tiempo dentro de los examenes modificando el $('#clock').countdown
+- Se reforzó la reinyección del Api Blocker para evitar confuciones y reinicios entre paginas
+- 
+
 ##  Estado actual
 
 - Extensión modular con cuatro switches:
-  - **Anti‑trampa** funcional con registro persistente (`registerContentScripts`), inyección inmediata al activarlo y recarga automática al desactivarlo para limpiar la página. (reforzado)
+  - **Anti‑trampa** funcional con registro persistente (`registerContentScripts`), inyección inmediata al activarlo y recarga automática al desactivarlo para limpiar la página. (reforzado) (doble reforzado)
   - **Anti‑AFK** funcionando con contador ascendente y simulación de actividad periódica.
   - Switches deshabilitados con tooltips explicativos para las funciones en construcción.
+  - **Pausar tiempo** Para casos de emergencia donde el tiempo es poco un botón que detiene el tiempo limite del examen para evitar que se cierre por tiempo (no se puede reanudar luego de pausarlo)
 - Interfaz con fondo personalizado, jerarquía visual clara y opacidad controlada.
 - Interruptores estilizados (rojo apagado, verde encendido) con estética gamer/profesional.
 - Título personalizado con enlace a Instagram y degradado animado en el texto “Osc4r”.
@@ -252,8 +263,7 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 ---
 
 ## Cosas por arreglar
-Anti AFK; se muestra correctamente el reloj y persiste la injección al cambiar de interfaz o actualizar la pagina, pero no cumple con los requisitos de la plataforma
-SOLUCIONADO!!!!!!!!!!!!!!
+...
 
 ---
 
@@ -276,6 +286,8 @@ SOLUCIONADO!!!!!!!!!!!!!!
   - Ver http history en cada respuesta
   - interceptar cada respuesta (con buscar con correct/incorrect false/true)
   - interceptar el envío final del examen (en busqueda de: catidad de correctas/incorrectas, porcentaje de examen final)
+
+    nota: en una evaluación/examen fue bastante complicado sacar algún dato relevante para esta función, lo unico decente fue ver como se almacenan las IDs de las preguntas pero no sirve de nada por el momento
       
 
 https://github.com/Osc4r15/OyM-ByPass-Cheat-files
