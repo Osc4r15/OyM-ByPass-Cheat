@@ -240,54 +240,43 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 - Se reforzó la reinyección del Api Blocker para evitar confuciones y reinicios entre paginas
 - 
 
-##  Estado actual
+### V 0.9.8.5
 
-- Extensión modular con cuatro switches:
-  - **Anti‑trampa** funcional con registro persistente (`registerContentScripts`), inyección inmediata al activarlo y recarga automática al desactivarlo para limpiar la página. (reforzado) (doble reforzado)
-  - **Anti‑AFK** funcionando con contador ascendente y simulación de actividad periódica.
-  - Switches deshabilitados con tooltips explicativos para las funciones en construcción.
-  - **Pausar tiempo** Para casos de emergencia donde el tiempo es poco un botón que detiene el tiempo limite del examen para evitar que se cierre por tiempo (no se puede reanudar luego de pausarlo)
-- Interfaz con fondo personalizado, jerarquía visual clara y opacidad controlada.
-- Interruptores estilizados (rojo apagado, verde encendido) con estética gamer/profesional.
-- Título personalizado con enlace a Instagram y degradado animado en el texto “Osc4r”.
-- Tooltips flotantes minimalistas con ícono `?` para feedback inmediato.
-- Arquitectura modular lista para crecer (`respuestas.js`, `tiempo.js`, `antiafk.js`, `blocker.js`).
-- ojo el anti afk no está funcionando como se aparenta | SOLUCIONADO
-- **Anti‑AFK** operando al 100% con simulación de peticiones reales, contador ascendente y diseño adaptado.
-- Se remplazó la idea de "Pausar tiempo" por modo oscuro para la plataforma
-- **Modo Oscuro** totalmente funcional, independiente, con persistencia por dominio, inyección ultra-temprana sin parpadeos y contraste mejorado (`120%`).
-- El error de parpadeo no es fallo de la extensión es demora por el consumo de cpu
-- Publicada en chrome store
+<img width="329" height="445" alt="image" src="https://github.com/user-attachments/assets/a0ba399f-4040-47db-91b2-89ccd42633e5" />
+
+.
+<img width="462" height="96" alt="image" src="https://github.com/user-attachments/assets/0a3697a0-e938-40e2-8021-730c61c5704c" />
+
+<img width="497" height="99" alt="image" src="https://github.com/user-attachments/assets/c166945e-6645-4faa-89ed-ef758d515631" />
 
 
----
 
-## Cosas por arreglar
-...
+<img width="602" height="175" alt="image" src="https://github.com/user-attachments/assets/732cd24a-e459-416f-8ed8-3995c4c5e4ba" />
 
----
 
-##  Ideas futuras
-- Que las **respuestas correctas** funcionen como el Anti-AFK:  
-  - Recargarse en tiempo real.  
-  - Marco verde rodeando la respuesta correcta.  
-  - Mensaje flotante indicando cuál es la correcta.
-  - Al iguar que el reloj afk poner una burbuja flotante abajo que diga cual es la respuesta correcta, ya sea el numero de esta (1-4) o el texto de la respuesta completa, O AMBAS. en caso que se complique el cuadro Rojo
-- Re-inyección automática al cambiar de pregunta/página.
-- Legalizar la extensión al completarla en la chrome store para que los demás la instalen mas facil sin el empaquetado (tal vez). HECHO
-- POSIBLE FUNCIÓN DE REMPLAZO O AGREGADO; habilitar el envío de tareas aunque ya esté vencida (COMPLICADO, SE HIZO CON DARKMODE MIENTRAS TANTO)
 
-## Tener en cuenta para la extracción de datos de respuestas correctas:
-  - Dev recorder
-  - DOM screenchot
-  - Guardar html de cada pregunta (poco probable que sirva
-    
-  - burp suite:
-  - Ver http history en cada respuesta
-  - interceptar cada respuesta (con buscar con correct/incorrect false/true)
-  - interceptar el envío final del examen (en busqueda de: catidad de correctas/incorrectas, porcentaje de examen final)
 
-    nota: en una evaluación/examen fue bastante complicado sacar algún dato relevante para esta función, lo unico decente fue ver como se almacenan las IDs de las preguntas pero no sirve de nada por el momento
+Manejo seguro de sesión en clics desde la burbuja:
+Para evitar que el LMS cierre la sesión o cargue una materia equivocada al abrir viewcontent.php de forma directa, la extensión utiliza un iframe oculto del mismo origen que realiza el recorrido completo de manera invisible (pasando por asignaturas.php y el índice de la materia correspondiente). Una vez asegurado el contexto de sesión, la pestaña actual navega de forma limpia a la tarea.
+
+Modificación del botón de tiempo de emergencia para que aparezca únicamente cuando el tiempo del examen llega a 30 segundos o menos leyendo dinámicamente el elemento #clock (manejado por jquery.countdown). Al pulsarlo, detiene el contador y reemplaza el reloj por el texto (pausado).
+
+Estado actual
+Extensión modular con funciones especializadas:
+Anti‑trampa funcional con registro persistente (registerContentScripts) e inyección inmediata.
+Anti‑AFK operando al 100% con simulación de peticiones reales, contador ascendente en formato hh:mm:ss y diseño adaptado.
+Scanner de Tareas automático mediante alarmas (chrome.alarms) con caché optimizada por huella digital.
+Burbuja de Respuestas Correctas exclusiva para entornos de examen.
+Modo Oscuro totalmente funcional, independiente, con persistencia por dominio e inyección ultra-temprana.
+Pausar tiempo de emergencia condicionado a los últimos 30 segundos del examen.
+Publicada en la Chrome Store de manera controlada.
+
+### Cosas por arreglar
+Monitorear posibles interferencias de scripts del navegador con las alarmas en segundo plano si la pestaña del LMS se mantiene totalmente inactiva por periodos largos.
+
+### Ideas futuras
+Perfeccionar el lector automático de respuestas correctas buscando patrones en JSONs embebidos, objetos window.examData y respuestas capturadas de la red (fetch/XMLHttpRequest).
+Añadir indicadores visuales (marcos de color o burbujas flotantes adicionales) directamente en las opciones del examen.
       
 
 https://github.com/Osc4r15/OyM-ByPass-Cheat-files
