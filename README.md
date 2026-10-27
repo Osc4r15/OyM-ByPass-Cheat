@@ -1,14 +1,21 @@
 # OyM ch34t by Osc4r 🕷
 Una extensión bacana pa curarse con la uni
-// estado de la extensión según funciones: 75% //
+// estado de la extensión según funciones: 80% //
 
 https://chromewebstore.google.com/detail/oym-ch34t-by-osc4r/afahmbfpmgojkabkgpdglalckfeldfmo
 
-<img width="296" height="300" alt="image" src="https://github.com/user-attachments/assets/f694c144-7604-4988-b22c-098193cb4a91" />
+<img width="299" height="325" alt="image" src="https://github.com/user-attachments/assets/3f519d34-c1d2-443e-be70-e41bb0495cf2" /> <img width="265" height="301" alt="image" src="https://github.com/user-attachments/assets/e8e2cdba-a22c-4abd-a6e9-e2cffa8ecf1b" />
 
 
 
-Revisando los sources y elements de la plataforma y una búsqueda de un buen rato, logré encontrar las herramientas de seguridad básicas que utiliza, bloqueándolas logrando engañarla dentro de los exámenes dándole base a esto.
+
+
+- ✅ Modo oscuro
+- ✅ Bypass AntiTrampa para examenes
+- ✅ AntiAFK para sesiones
+- ✅ Botón de pausa para tiempo de examenes
+- ✅ Escaner de materias, examenes, etc... [NEW]
+- ❌ Extracción de respuestas correctas.
 ---
 
 ##  Change Log
