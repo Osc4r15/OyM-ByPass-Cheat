@@ -1,10 +1,13 @@
 # OyM ch34t by Osc4r 🕷
 Una extensión bacana pa curarse con la uni
-// estado de la extensión según funciones: 80% //
+// estado de la extensión según funciones: 99% //
 
 https://chromewebstore.google.com/detail/oym-ch34t-by-osc4r/afahmbfpmgojkabkgpdglalckfeldfmo
 
 <img width="299" height="325" alt="image" src="https://github.com/user-attachments/assets/3f519d34-c1d2-443e-be70-e41bb0495cf2" /> <img width="265" height="301" alt="image" src="https://github.com/user-attachments/assets/e8e2cdba-a22c-4abd-a6e9-e2cffa8ecf1b" />
+
+<img width="304" height="120" alt="image" src="https://github.com/user-attachments/assets/fb7f097b-60de-4897-8c80-aee9acb68f85" />
+
 
 
 
@@ -15,7 +18,7 @@ https://chromewebstore.google.com/detail/oym-ch34t-by-osc4r/afahmbfpmgojkabkgpdg
 - ✅ AntiAFK para sesiones
 - ✅ Botón de pausa para tiempo de examenes
 - ✅ Escaner de materias, examenes, etc... [NEW]
-- ❌ Extracción de respuestas correctas.
+- ✅ Extracción de respuestas correctas. (con ia) POR FIN
 ---
 
 ##  Change Log
@@ -261,29 +264,57 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 <img width="602" height="175" alt="image" src="https://github.com/user-attachments/assets/732cd24a-e459-416f-8ed8-3995c4c5e4ba" />
 
 
+- Escaner de materias y examenes
+  - automatización de scanneos cuando no se está presente
+  - almacenamiento de los datos para recargas y otras sesiones
+  - direccionamiento a cada materia
+
+- Minimización del botón de pausar tiempo 
 
 
-Manejo seguro de sesión en clics desde la burbuja:
-Para evitar que el LMS cierre la sesión o cargue una materia equivocada al abrir viewcontent.php de forma directa, la extensión utiliza un iframe oculto del mismo origen que realiza el recorrido completo de manera invisible (pasando por asignaturas.php y el índice de la materia correspondiente). Una vez asegurado el contexto de sesión, la pestaña actual navega de forma limpia a la tarea.
+### V 0.9.8.8 POR FIN SE LOGRÓ
 
-Modificación del botón de tiempo de emergencia para que aparezca únicamente cuando el tiempo del examen llega a 30 segundos o menos leyendo dinámicamente el elemento #clock (manejado por jquery.countdown). Al pulsarlo, detiene el contador y reemplaza el reloj por el texto (pausado).
+<img width="304" height="120" alt="image" src="https://github.com/user-attachments/assets/fb58a775-7994-413e-9b4a-d85c3e160399" />
 
-Estado actual
-Extensión modular con funciones especializadas:
-Anti‑trampa funcional con registro persistente (registerContentScripts) e inyección inmediata.
-Anti‑AFK operando al 100% con simulación de peticiones reales, contador ascendente en formato hh:mm:ss y diseño adaptado.
-Scanner de Tareas automático mediante alarmas (chrome.alarms) con caché optimizada por huella digital.
-Burbuja de Respuestas Correctas exclusiva para entornos de examen.
-Modo Oscuro totalmente funcional, independiente, con persistencia por dominio e inyección ultra-temprana.
-Pausar tiempo de emergencia condicionado a los últimos 30 segundos del examen.
+- Botón de respuesta de examenes
+    - conecta con una función previa que ya había hecho que al activarse encierra en un contorno rojo una respuesta en especifico de cada pregunta
+    - se usa una IA que recibe los parametros necesarios de preguntas y respuestas de todo el DOM y responde con un JSON indicando la respuesta correcta de cada pregunta
+    - los scripts de answer lo interpretan y conectan con la función de contorno rojo
+    - se usan varios motores de IA para evitar atascos aunque sea una sola API
+
+
+<img width="486" height="467" alt="image" src="https://github.com/user-attachments/assets/568a9a07-b441-4fa5-917b-a3480d077da2" /> <br>
+
+  <img width="276" height="72" alt="image" src="https://github.com/user-attachments/assets/f75e1495-6a57-4177-a53e-12c3307f0e0d" />
+
+
+
+
+
+
+
+### Estado actual
+- Extensión modular con funciones especializadas:
+    - Anti‑trampa funcional con registro persistente (registerContentScripts) e inyección inmediata.
+    - Anti‑AFK operando al 100% con simulación de peticiones reales, contador ascendente en formato hh:mm:ss y diseño adaptado (ahora solo se reinicia al cerrar sesión).
+    - Scanner de Tareas automático mediante alarmas (chrome.alarms) con caché optimizada por huella digital // sistema de direccionamiento a cada tarea/examen.
+    - Burbuja de Respuestas Correctas exclusiva para entornos de examen.
+    - Modo Oscuro totalmente funcional, independiente, con persistencia por dominio e inyección ultra-temprana.
+    - Pausar tiempo de emergencia condicionado a los últimos 30 segundos del examen.<br><br>
 Publicada en la Chrome Store de manera controlada.
 
+
+
+
+
+
 ### Cosas por arreglar
-Monitorear posibles interferencias de scripts del navegador con las alarmas en segundo plano si la pestaña del LMS se mantiene totalmente inactiva por periodos largos.
+- por ahora nada
 
 ### Ideas futuras
-Perfeccionar el lector automático de respuestas correctas buscando patrones en JSONs embebidos, objetos window.examData y respuestas capturadas de la red (fetch/XMLHttpRequest).
-Añadir indicadores visuales (marcos de color o burbujas flotantes adicionales) directamente en las opciones del examen.
-      
+- whitelist para la IA
+- organizar los apartados de permisos
+- re-ordenar las notas en todo el codigo
+- quitarle la memoria de estado al interruptor
 
 https://github.com/Osc4r15/OyM-ByPass-Cheat-files
