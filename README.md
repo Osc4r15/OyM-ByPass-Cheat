@@ -288,11 +288,24 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
   <img width="276" height="72" alt="image" src="https://github.com/user-attachments/assets/f75e1495-6a57-4177-a53e-12c3307f0e0d" />
 
 
+### V 0.9.9
+
+- Re-arreglo del filtro invertido (darkmode) cuando es un documento pdf
+  (Antes funcionaba en un js pero al cambiarlo a un css perdió la logica, así que puse aparte lo de ignorar los enlaces //*.pdf
+
+- Arreglo de tonos de color del temporizador del anti afk con el darkmode activo (ahora luce como tenía pensado desde un principio)
+- re diseño de la burbuja del scanner haciéndola parecida al contador del antiafk
+
+
+<img width="324" height="154" alt="image" src="https://github.com/user-attachments/assets/9fa225d2-7ef2-41e7-9d22-35bd8fc66c07" /><br>
+<img width="344" height="173" alt="image" src="https://github.com/user-attachments/assets/cf07beed-1041-4f85-bfb6-42f3f2c67a67" /><br>
 
 
 
 
 
+
+<br><br><br><br>
 ### Estado actual
 - Extensión modular con funciones especializadas:
     - Anti‑trampa funcional con registro persistente (registerContentScripts) e inyección inmediata.
@@ -311,10 +324,13 @@ Publicada en la Chrome Store de manera controlada.
 ### Cosas por arreglar
 - por ahora nada
 
+### Pendientes
+- Tener en cuenta para las respuestas correctas, las posibles respuestas que no son selección si no escritas
+
 ### Ideas futuras
 - whitelist para la IA
 - organizar los apartados de permisos
 - re-ordenar las notas en todo el codigo
-- quitarle la memoria de estado al interruptor
+- quitarle la memoria de estado al interruptor / no es necesario, no se manda la petición a menos que se detecte el cuerpo correcto del DOM /
 
 https://github.com/Osc4r15/OyM-ByPass-Cheat-files
