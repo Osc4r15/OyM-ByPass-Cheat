@@ -301,6 +301,14 @@ Ahora se re injecta para evitar un bug que había al entrar nuevamente a una pag
 <img width="344" height="173" alt="image" src="https://github.com/user-attachments/assets/cf07beed-1041-4f85-bfb6-42f3f2c67a67" /><br>
 
 
+### V 0.9.9.1
+
+- Se arreglo la superposición del temporizador afk cuando se está en la pagina */examen/ ya que atravesaba el interruptor de respuestas
+
+  <br><img width="369" height="170" alt="image" src="https://github.com/user-attachments/assets/6b77c405-28d2-4bb3-b485-9bd6e2ff342d" />
+
+- se removió el archivo `answer-main.json` porque era de la prueba de búsquedas pasada, pero ya no es necesario con la implementación de IA
+
 
 
 
@@ -322,7 +330,7 @@ Publicada en la Chrome Store de manera controlada.
 
 
 ### Cosas por arreglar
-- por ahora nada
+- pestaña de minutos del panel de escaner
 
 ### Pendientes
 - Tener en cuenta para las respuestas correctas, las posibles respuestas que no son selección si no escritas
